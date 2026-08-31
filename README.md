@@ -1,6 +1,6 @@
 # KasssaSysteem
 
-Kassa Systeem voor Veros Scouting Lint.
+Kassasysteem ontwikkeld om gebruikt te worden op de bieravond van Veros en Scouting Lint.
 
 ## Monorepo structuur
 
@@ -13,3 +13,8 @@ packages/
   shared/     # gedeelde types/utilities
   config/     # gedeelde configuratie modules
 ```
+
+## Contributors
+
+- Mathieu Dochez
+- Jolien Bracke
