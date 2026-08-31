@@ -2,7 +2,7 @@
 
 Kassasysteem ontwikkeld om gebruikt te worden op de bieravond van Veros en Scouting Lint.
 
-## Monorepo structuur
+## Monorepo Structuur
 
 ```text
 apps/
