@@ -60,3 +60,8 @@ node_modules/
 # .NET build outputs
 **/bin/
 **/obj/
+
+# Ignore JetBrains IntelliJ IDEA project settings
+.idea/
+*.iml
+*.iws
