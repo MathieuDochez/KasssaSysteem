@@ -1,0 +1,21 @@
+{
+  "name": "kasssasysteem-monorepo",
+  "version": "1.0.0",
+  "description": "Kassa Systeem voor Veros Scouting Lint",
+  "scripts": {
+    "frontend:dev": "npm run dev --workspace frontend",
+    "frontend:build": "npm run build --workspace frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://localhost:26831/MathieuDochez/KasssaSysteem"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "apps/frontend",
+    "packages/*"
+  ]
+}
