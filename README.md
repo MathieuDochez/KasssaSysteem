@@ -1,8 +1,8 @@
 # KasssaSysteem
 
-Kassa Systeem voor Veros Scouting Lint.
+Kassasysteem ontwikkeld om gebruikt te worden op de bieravond van Veros en Scouting Lint.
 
-## Monorepo structuur
+## Monorepo Structuur
 
 ```text
 apps/
@@ -14,6 +14,7 @@ packages/
   config/     # gedeelde configuratie modules
 ```
 
+<<<<<<< HEAD
 ## Frontend (publieke website)
 
 React + Vite + React Router. Starten vanuit de root:
@@ -34,3 +35,9 @@ apps/frontend/src/
 
 De bier- en aanbodlijsten staan nu nog in `src/data/`. Zodra de backend een database
 heeft, worden enkel de functies in `src/services/catalog.js` vervangen door API-calls.
+=======
+## Contributors
+
+- Mathieu Dochez
+- Jolien Bracke
+>>>>>>> 7b20c82b2c9d570a4e2bfd98d652d186a921220d
