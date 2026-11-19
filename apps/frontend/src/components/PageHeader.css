@@ -1,0 +1,34 @@
+.page-header {
+  padding: 56px 0 40px;
+  background:
+    radial-gradient(ellipse at 85% 0%, rgb(224 164 58 / 35%), transparent 60%),
+    linear-gradient(180deg, var(--chrome-2), var(--chrome));
+  color: var(--malt-100);
+}
+
+.page-header__eyebrow {
+  margin: 0 0 8px;
+  color: var(--amber-400);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.page-header__title {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.page-header__lead {
+  max-width: 60ch;
+  font-size: 1.05rem;
+}
+
+.page-header__lead p:last-child {
+  margin-bottom: 0;
+}
+
+.page-header a {
+  color: var(--amber-400);
+}

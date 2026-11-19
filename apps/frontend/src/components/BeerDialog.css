@@ -1,0 +1,132 @@
+.beer-dialog {
+  width: min(820px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-lg);
+  overflow: auto;
+}
+
+.beer-dialog::backdrop {
+  background: rgb(20 14 9 / 70%);
+  backdrop-filter: blur(2px);
+}
+
+.beer-dialog__panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .beer-dialog__panel {
+    grid-template-columns: 260px 1fr;
+  }
+}
+
+.beer-dialog__media {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--image-bg);
+}
+
+.beer-dialog__media img {
+  width: auto;
+  height: 240px;
+  object-fit: contain;
+}
+
+@media (min-width: 640px) {
+  .beer-dialog__media img {
+    height: 320px;
+  }
+}
+
+.beer-dialog__content {
+  padding: 24px;
+}
+
+.beer-dialog__number {
+  margin: 0 0 4px;
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.beer-dialog__title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 4px;
+  padding-right: 32px;
+}
+
+.beer-dialog__brewery {
+  color: var(--muted);
+}
+
+.beer-dialog__description {
+  line-height: 1.7;
+}
+
+.beer-dialog__facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  margin: 20px 0;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.beer-dialog__facts div {
+  padding: 10px 14px;
+  background: var(--surface);
+}
+
+.beer-dialog__facts dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.beer-dialog__facts dd {
+  margin: 2px 0 0;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+.beer-dialog__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.beer-dialog__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--surface-tint);
+  color: var(--text-strong);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.beer-dialog__close:hover {
+  background: var(--border);
+}

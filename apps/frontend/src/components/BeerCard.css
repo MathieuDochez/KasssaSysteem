@@ -1,0 +1,122 @@
+.beer-card {
+  height: 100%;
+}
+
+.beer-card__button {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.beer-card__button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.beer-card__media {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 12px;
+  background: var(--image-bg);
+  overflow: hidden;
+}
+
+@media (max-width: 520px) {
+  .beer-card__media {
+    height: 160px;
+  }
+}
+
+.beer-card__media img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.beer-card__button:hover .beer-card__media img {
+  transform: scale(1.05);
+}
+
+.beer-card__number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: grid;
+  place-items: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: linear-gradient(160deg, var(--amber-400), var(--amber-500));
+  color: var(--stout-900);
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.beer-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 14px 16px 16px;
+  min-width: 0;
+}
+
+.beer-card__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  color: var(--text-strong);
+  margin-bottom: 4px;
+}
+
+.beer-card__brewery {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+}
+
+.beer-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+  font-size: 0.85rem;
+  margin-top: auto;
+}
+
+.beer-card__stat {
+  color: var(--text);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.beer-card__more {
+  margin-top: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
+.beer-card__more::after {
+  content: ' →';
+}
